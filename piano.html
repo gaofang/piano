@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<head>
+	<meta http-equiv="Content-Type"	content="text/html" charset="utf-8">
+	<title> onmouseout </title>
+
+</head>
+<body>
+<!--
+	<form action="test0426.html" method="" accept-charset="utf-8">
+		Password:
+		<input name="password" type="text"  placeholder="please input name" value="hahah" onselect="info()">
+		<input name="button" type="button" value="access"">
+	</form>
+-->
+<!-- use canvas  to draw the piano keyboard  -->
+<!-- <canvas id="piano" width="800" height="300" style="border: 5px solid #eee;">not support</canvas> -->
+	<script type="text/javascript" language=JavaScript charset="UTF-8">
+       document.onkeydown=function(event){
+       	//create audio object  for play
+	       var au = document.createElement("audio");
+	       au.preload="auto";
+             var e = event || window.event || arguments.callee.caller.arguments[0];
+             switch(e && e.keyCode){
+	             case 90:
+	             	au.src="raw/c3.ogg";
+				 	break;
+	             case 88:
+	             	au.src="raw/d3.ogg";
+				 	break;
+	             case 67:
+	             	au.src="raw/e3.ogg";
+				 	break;
+	             case 86:
+		             au.src="raw/f3.ogg";
+		             break;
+	             case 66:
+		             au.src="raw/g3.ogg";
+		             break;
+	             case 78:
+		             au.src="raw/a3.ogg";
+		             break;
+	             case 77:
+		             au.src="raw/b3.ogg";
+		             break;
+		         case 65:
+			         au.src="raw/c4.ogg";
+			         break;
+		         case 83:
+			         au.src="raw/d4.ogg";
+			         break;
+		         case 68:
+			         au.src="raw/e4.ogg";
+			         break;
+		         case 70:
+			         au.src="raw/f4.ogg";
+			         break;
+		         case 71:
+			         au.src="raw/g4.ogg";
+			         break;
+		         case 72:
+			         au.src="raw/a4.ogg";
+			         break;
+		         case 74:
+			         au.src="raw/b4.ogg";
+			         break;
+		         case 75:
+			         au.src="raw/c5.ogg";
+			         break;
+		         case 76:
+			         au.src="raw/d5.ogg";
+			         break;
+		         case 81:
+			         au.src="raw/e5.ogg";
+			         break;
+		         case 87:
+			         au.src="raw/f5.ogg";
+			         break;
+		         case 69:
+			         au.src="raw/g5.ogg";
+			         break;
+		         case 82:
+			         au.src="raw/a5.ogg";
+			         break;
+		         case 84:
+			         au.src="raw/b5.ogg";
+			         break;
+		         case 89:
+			         au.src="raw/c6.ogg";
+			         break;
+		         case 85:
+			         au.src="raw/d6.ogg";
+			         break;
+		         case 73:
+			         au.src="raw/e6.ogg";
+			         break;
+		         case 79:
+			         au.src="raw/f6.ogg";
+			         break;
+		         case 80:
+			         au.src="raw/g6.ogg";
+			         break;
+		         case 49:
+			         au.src="raw/a6.ogg";
+			         break;
+		         case 50:
+			         au.src="raw/b6.ogg";
+			         break;
+		         case 51:
+			         au.src="raw/c7.ogg";
+			         break;
+		         case 52:
+			         au.src="raw/d7.ogg";
+			         break;
+		         case 53:
+			         au.src="raw/e7.ogg";
+			         break;
+		         case 54:
+			         au.src="raw/f7.ogg";
+			         break;
+		         case 55:
+			         au.src="raw/g7.ogg";
+			         break;
+		         case 56:
+			         au.src="raw/a7.ogg";
+			         break;
+		         case 57:
+			         au.src="raw/b7.ogg";
+			         break;
+		         case 48:
+			         au.src="raw/b7.ogg";
+			         break;  
+             }
+             //play 
+            au.play();
+        }
+// var ffgg=document.getElementById("piano");
+     
+//             var ctx =ffgg.getContext("2d");
+//             ctx.beginPath();
+//             ctx.lineWidth="20";
+//             ctx.strokeStyle="black";
+//             ctx.rect(0,0,40,300);
+//             ctx.stroke();
+
+        </script>
+</body>
+
+</html>
